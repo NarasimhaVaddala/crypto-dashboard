@@ -42,7 +42,7 @@ Clicking on any card reveals a **trending chart** powered by Chart.js at the bot
 - Top section: 3 crypto cards (BTC, ETH, DOGE)
 - Bottom section: Trending chart appears on card click
 
-![Dashboard Screenshot](./screenshot.png)
+![Dashboard Screenshot](./Screenshot.png)
 
 ---
 
