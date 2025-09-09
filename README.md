@@ -1,69 +1,69 @@
-# React + TypeScript + Vite
+# 🚀 Crypto Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple yet elegant **Cryptocurrency Dashboard**.
 
-Currently, two official plugins are available:
+The dashboard fetches real-time price details of **Bitcoin (BTC)**, **Ethereum (ETH)**, and **Dogecoin (DOGE)**, displaying them in interactive cards.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Clicking on any card reveals a **trending chart** powered by Chart.js at the bottom of the cards, giving users insights into the coin’s performance in last **6 hours**.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Features
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Crypto Overview Cards** – Displays details of BTC, ETH, and DOGE.
+- **Interactive Chart** – Clicking a card shows a live trend chart below.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- **Modern UI** – Styled with **Tailwind CSS** for a clean, responsive design.
+- **Type Safety** – Built with **TypeScript** for reliable code.
+- 📉 **Charting Library** – Integrated with **Chart.js** for dynamic data visualization.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🌐 API
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Used CoinGecko Api as mentioned for realtime changes of prices.
+- Used demo version of CoinGecko which has 10,000 monthly requests limit
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## 🛠️ Tech Stack
+
+- **React** – UI library
+- **TypeScript** – Type safety
+- **Chart.js** – Charts & visualization
+- **Tailwind CSS** – Styling
+
+---
+
+## 📷 Demo Preview
+
+**Dashboard Layout:**
+
+- Top section: 3 crypto cards (BTC, ETH, DOGE)
+- Bottom section: Trending chart appears on card click
+
+![Dashboard Screenshot](./public/screenshot.png)
+
+---
+
+## ⚙️ Installation & Setup
+
+Follow these steps to run the project locally:
+
+```bash
+
+# Signup and Obtain api key from Coingecko
+https://www.coingecko.com
+
+# Clone the repository
+git clone https://github.com/NarasimhaVaddala/crypto-dashboard
+
+# Navigate into the project folder
+cd crypto-dashboard
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
 ```
