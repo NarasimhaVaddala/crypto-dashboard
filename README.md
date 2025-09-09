@@ -12,10 +12,10 @@ Clicking on any card reveals a **trending chart** powered by Chart.js at the bot
 
 - **Crypto Overview Cards** – Displays details of BTC, ETH, and DOGE.
 - **Interactive Chart** – Clicking a card shows a live trend chart below.
-
+- **Auto Fetch Prices** – Auto Fetch **prices** for every 30 seconds.
 - **Modern UI** – Styled with **Tailwind CSS** for a clean, responsive design.
 - **Type Safety** – Built with **TypeScript** for reliable code.
-- 📉 **Charting Library** – Integrated with **Chart.js** for dynamic data visualization.
+- **Charting Library** – Integrated with **Chart.js** for dynamic data visualization.
 
 ---
 
